@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body > div:first-of-type,
+            body > div:last-of-type{
+                width: 100%;
+            }
+
+            body > div{
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+                max-width: 350px;
+            }
+
+            label{
+                font-weight: bold;
+                color: #333;
+            }
+
+            input{
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+                outline: none;
+            }
+
+            input:focus{
+                border-color: #667eea;
+                box-shadow: 0 0 5px rgba(102,126,234,0.5);
+            }
+
+            #res{
+                margin-top: 15px;
+                background: #f3f3f3;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            body > div:last-of-type{
+                margin-top: 15px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+
+            button{
+                height: 50px;
+                width: 100%;
+                border: none;
+                border-radius: 8px;
+                background: #667eea;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            button:hover{
+                background: #764ba2;
+                transform: translateY(-2px);
+            }
+
+            button:active{
+                transform: scale(0.95);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <label for="First">FirstNumber: </label>
+            <input type="number" oninput="fetch()" name="fir" id="fir"><br><br>
+
+            <label for="Second">SecondNumber: </label>
+            <input type="number" oninput="fetch()" name="sec" id="sec"><br>
+
+            <input type="text" id="res">
+        </div>
+
+        <div>
+            <button onclick="add()">ADD</button>
+            <button onclick="sub()">SUB</button>
+            <button onclick="mul()">MUL</button>
+            <button onclick="div()">DIV</button>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        let first,second = 0;
+        console.log("hi");
+        alert("meow");
+        function fetch(){
+            first = Number(document.getElementById("fir").value);
+            second = Number(document.getElementById("sec").value);
+            console.log("value: "+ first + second);
+        };
+        function add(){
+            document.getElementById("res").value = first+second;
+        };
+        function sub(){
+            document.getElementById("res").value = first-second;
+        };
+        function mul(){     
+            document.getElementById("res").value = first*second;
+        };
+        function div(){
+            document.getElementById("res").value = first/second;
+        };
+    </script>
+</html>
