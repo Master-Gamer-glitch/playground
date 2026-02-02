@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Mid Semester Marks</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+        }
+        form {
+            background-color: white;
+            width: 300px;
+            padding: 10px;
+            margin: 40px;
+            border: 1px solid black;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        input {
+            margin: 5px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Marks in Mid Semester Examination</h2>
+
+        <label>Name</label><br>
+        <input type="text"><br>
+
+        <label>Roll Number</label><br>
+        <input type="text"><br><br>
+
+        <label>Marks Obtained</label><br>
+        <input type="radio" name="marks"> Below 20<br>
+        <input type="radio" name="marks"> 20 - 40<br>
+        <input type="radio" name="marks"> 40 - 60<br>
+        <input type="radio" name="marks"> Above 60<br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
