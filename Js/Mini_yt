@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini YouTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            font-family: Arial;
+            background:#f9f9f9;
+        }
+        .top{
+            padding:10px;
+            background:white;
+            border-bottom:1px solid #ddd;
+        }
+        .top i{
+            font-size:22px;
+            margin-right:15px;
+        }
+        .video{
+            padding:15px;
+        }
+        iframe{
+            width:100%;
+            height:315px;
+        }
+        .actions{
+            padding:10px;
+            background:white;
+        }
+        .actions i{
+            margin-right:20px;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top">
+    <i class="bi bi-list"></i>
+    <i class="bi bi-youtube"></i>
+    <i class="bi bi-search"></i>
+</div>
+
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+</div>
+
+<div class="actions">
+    <i class="bi bi-hand-thumbs-up"></i>
+    <i class="bi bi-hand-thumbs-down"></i>
+    <i class="bi bi-share"></i>
+    <i class="bi bi-download"></i>
+</div>
+
+</body>
+</html>
