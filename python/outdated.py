@@ -14,7 +14,6 @@ months = [
 ]
 
 def main():
-
  while True:
     date = input("Date: ").strip()
 
