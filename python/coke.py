@@ -3,7 +3,6 @@ def main():
     while(amt > 0):
         amt = calc(amt)
 
-
 def calc(amt):
     print("Amount due: ", amt, sep="")
     inp = int(input("Insert Coin: "))
