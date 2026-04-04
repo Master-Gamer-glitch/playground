@@ -8,7 +8,6 @@ class Email:
 
     def mark_as_read(self):
         self.read = True
-    
 
 class User:
     def __init__(self, name):
