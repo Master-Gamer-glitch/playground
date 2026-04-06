@@ -117,6 +117,7 @@ def menu(current_user,receiver):
     
 def send(current_user, receiver):
     try:
+        
         # receiver = input("Who do you want to send an Email to? ").strip(" ")
         # if receiver not in total_users: 
         #     raise ValueError
