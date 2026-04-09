@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <fieldset>
+            <label for="inp">Phone number</label>
+            <input type="text" value="+91" id="inp">
+            <span id="res" style="color: red;"></span>
+            <button id="submit">SUBMIT</button><br><br>
+
+            <label for="em">Email ID:</label>
+            <input type="text" id="em">
+            <span id="emres" style="color: red"></span>
+            <button id="emsub">SUBMIT</button>
+        </fieldset>
+        <script>
+            document.getElementById("submit").addEventListener("click", function(e){
+                let input = document.getElementById("inp").value;
+                input = input.trim().replaceAll("-", "");
+                console.log(input)
+                input = input.match(/\+91\d{10}/)// either array or null
+
+                if(input){
+                    document.getElementById("res").textContent = "Message sent to: " + input[0].slice(3,5) + "******" + input[0].slice(-1);
+                } else {
+                    document.getElementById("res").textContent = "ERROR!!"
+                }
+            })
+
+            document.getElementById("emsub").addEventListener("click", function(e){
+                let input = document.getElementById("em").value.trim();
+                index = input.search("@")
+                console.log(index)
+                if(index == -1){
+                    return document.getElementById('emres').textContent = "ERROR!";
+                } else {
+                    console.log(input.replace("@", ""))
+                    document.getElementById("emres").textContent = "Email sent to: " + input.replace("@", "").slice(0,2) + "******@gmail.com";
+                }
+
+            })
+        </script>
+    </body>
+</html>
