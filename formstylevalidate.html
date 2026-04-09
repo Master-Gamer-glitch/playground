@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            div {
+                padding: 15px;
+            }
+            fieldset {
+                width: 450px;
+                margin-left: 450px;
+                margin-top: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <div>
+            <br><label for="cnum" >Card Number</label><input autofocus type="text" id="cnum"><br> </div>
+
+            <div id="cvvdis" style="display:none" ><label for="cvv">CVV</label> <input type="text" disabled id="cvv"><br></div>
+              <div id="expdis"style="display:none">  <label for="exp">Expiry</label> 
+                <select name="" disabled id="exp">
+                    <option value="" disabled selected hidden>Choose Expiry</option>
+                    <option value="2023">2023</option>
+                    <option value="2023">2024</option>
+                    <option value="2023">2025</option>
+                </select></div>
+                <br><br> <button disabled style="display:none" id="pay" disabled>PAY</button>            
+            </div>
+        </fieldset>
+        
+        <script>
+            document.getElementById("cnum").addEventListener("blur", function(e){
+                if(this.value.trim().startsWith("223344")){
+                    
+                    document.getElementById("cvvdis").style.display = "block";
+                    document.getElementById("cvv").disabled = false;
+                    document.getElementById("cvv").focus();
+                    
+                } else {
+                    alert("INVALID INPUT")
+                }
+            })
+            
+            document.getElementById("cvv").addEventListener("blur", function(e){
+                if(this.value.length == 3){
+                    document.getElementById("expdis").style.display = "block";
+                    document.getElementById("exp").disabled = false;
+                    
+                }else {
+                    alert("INVALID INPUT")
+                }
+            })
+            document.getElementById("exp").addEventListener("change", function(e){
+                document.getElementById("pay").disabled = false;
+                document.getElementById("pay").style.display = "block";
+            })
+        </script>
+    </body>
+</html>
