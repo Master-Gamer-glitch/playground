@@ -1,0 +1,46 @@
+ <html>
+    <head>
+        <style>
+            div {
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <div>
+            <br><label for="cnum">Card Number</label><input type="text" id="cnum"><br> </div>
+
+            <div id="cvvdis"><label for="cvv">CVV</label> <input type="text" disabled id="cvv"><br></div>
+              <div id="expdis">  <label for="exp">Expiry</label> 
+                <select disabled name="" id="exp">
+                    <option value="" disabled selected hidden>Choose Expiry</option>
+                    <option value="2023">2023</option>
+                    <option value="2023">2024</option>
+                    <option value="2023">2025</option>
+                </select></div>
+                <br><br> <button id="pay" disabled>PAY</button>            
+            </div>
+        </fieldset>
+        
+        <script>
+            document.getElementById("cnum").addEventListener("blur", function(e){
+                if(this.value.trim().startsWith("223344")){
+                    document.getElementById("cvv").disabled = false;
+                    document.getElementById("cvv").focus();
+                }
+            })
+
+            document.getElementById("cvv").addEventListener("blur", function(e){
+                if(this.value.length == 3){
+                    document.getElementById("exp").disabled = false;
+                    
+                }
+            })
+            document.getElementById("exp").addEventListener("blur", function(e){
+                document.getElementById('pay').disabled = false;
+            })
+        </script>
+    </body>
+</html>
