@@ -15,5 +15,9 @@ json_data = json.dumps(data)
 print(json_data)
 
 #convert to python dict (deserialization)
-data = json.loads(json_data)
-print(data)
+# should always be in try-except wrapper since u cant trust anyone in this world
+try:
+    data = json.loads(json_data)
+    print(data)
+except json.JSONDecodeError:
+    print("i knew i coudnt trust you.")
