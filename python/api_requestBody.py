@@ -1,4 +1,7 @@
 from pydantic import BaseModel
+from fastapi import FastAPI
+
+app = FastAPI()
 
 #BaseModel validates the data received and throws error otherwise.
 class Item(BaseModel):
