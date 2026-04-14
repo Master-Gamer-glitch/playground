@@ -2,6 +2,7 @@ from fastapi import Depends, FastAPI
 
 app = FastAPI()
 
+#Dependancy function
 def get_token():
     return "fake-token"
 
