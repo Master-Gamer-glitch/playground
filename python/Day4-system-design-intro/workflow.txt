@@ -1,0 +1,21 @@
+Backend flow:
+
+Client
+  |
+  v
+Router  ---> validation (basic)
+  |
+  v
+Service ---> logic (rules, decisions)
+  |
+  v
+Data    ---> DB/API
+  |
+  v
+Service ---> prepare result
+  |
+  v
+Response ---> format JSON
+  |
+  v
+Client gets result
