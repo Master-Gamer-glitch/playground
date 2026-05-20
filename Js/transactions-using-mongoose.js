@@ -1,5 +1,5 @@
 //Learnt about transactions
-require("mongoose");
+const mongoose = require("mongoose");
 
 const session = await mongoose.startSession();
 session.startTransaction();
