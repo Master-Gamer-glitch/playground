@@ -10,9 +10,12 @@ try {
   await session.commitTransaction();
 
 } catch (error) {
+  await session.rollbackTransaction();
   await session.abortTransaction(); // atomicity;
   
 } finally {
   session.endSession(); //release resources;
   
 }
+
+// NO SAVEPOINT FACILITY WITH MONGOOSE... HENCE ALTERNATIVE: "POOL" [NOT GONNA FAFO HERE];
