@@ -39,7 +39,7 @@ function render(){
 
 app.listen(8080, () => console.log("Hi backend!"));
 
-mongoose.connect("mongodb+srv://aryanshrivastava3005_db_user:BC1bOjt7gDO0PzQl@cluster0.b45ay9z.mongodb.net/")
+mongoose.connect("super-secret-string-here")
 .then(console.log("database connected"))
 .catch(function(err){
     console.log("ERROR in db connection " + err.message);
