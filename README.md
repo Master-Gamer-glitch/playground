@@ -1,6 +1,6 @@
 # Welcome to the most active repo on my profile!
 
-## Backlog [13 Days as of 30 April 2026]
+## Backlog 
 ## GSoC - 26: REJECTED.
 THIS IS NOW A PERSONAL PROJECT TO BE DONE WITHIN 12 WEEKS STARTING FROM - JUNE 25
 
