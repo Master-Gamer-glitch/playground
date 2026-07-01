@@ -1,8 +1,9 @@
 # Welcome to the most active repo on my profile!
 
-## Backlog [learning properly...]
+## 
 ## GSoC - 26: REJECTED.
-THIS IS NOW A PERSONAL PROJECT TO BE DONE WITHIN 12 WEEKS STARTING FROM - JUNE 25
+THIS IS NOW A PERSONAL PROJECT TO BE DONE WITHIN 12 WEEKS. 
+STARTED ML SINCE JULY 1st 2026.
 
 ## So what is this repo?
 This is my learn and experiment space: basically my training place "playground"
