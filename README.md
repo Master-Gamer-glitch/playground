@@ -14,7 +14,7 @@ Rn im pursuing my journey into Machine Learning. I commit to learning something 
 ## Whats your progress?
 Since im doing ML, you can find my daily progress in `python` directory labelled as `Day-x-learnings`. While I understand that the topics mentioned below are vast and its humanly impossible for me to cover every topic in depth (that would take me a semester at this pace) but I will gain relevant enough knowledge and experience to get started, and then learn in deep on fly.
 
-# Roadmap im following:
+# Stuff Required for GSoC project:
 - [x] CORE BACKEND
 - [ ] SYSTEM DESIGN
 - [ ] LLM USAGE
