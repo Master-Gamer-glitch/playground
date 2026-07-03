@@ -1,6 +1,6 @@
 # Welcome to the most active repo on my profile!
 
-## 
+
 ## GSoC - 26: REJECTED.
 THIS IS NOW A PERSONAL PROJECT TO BE DONE WITHIN 12 WEEKS. 
 STARTED ML SINCE JULY 1st 2026.
